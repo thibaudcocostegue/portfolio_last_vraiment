@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #E5E5E5; /* global scope */
+  --secondary:#999999;
+  --action:#006AFF;
+  --good:#00B33C;
+  --bad:#E6192A;
+  --surface1:#333333;
+  --surface2:#1A1A1A;
+  --background:#262626;
+  --backgroundTranslucent:#000000a6;
+}
+#app {
+  max-width: 1440px;
+  margin: 0 auto;       /* centre horizontalement */
+  padding: 0 1rem;      /* petit espace intérieur sur les côtés */
+  background-color:var(--background);
+  color:var(--primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles globaux */
+body {
+  margin: 0;
+  /* font-family: Inter, Arial, sans-serif; */
+  background-color: var(--background);
+  color: var(--primary);
+}
