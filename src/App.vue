@@ -19,50 +19,46 @@ const hero = {
 // Projets (cartes + modales)
 const projects = ref([
   {
-    id: 'nebula',
-    title: 'Nebula Engine',
-    summary: 'Meta-scanner de dépôts (Laravel + Rust) avec pipeline d’analyse.',
-    tags: ['web', 'saas', 'rust', 'laravel'],
+    id: 'mykyxar',
+    title: 'MyKyxar',
+    summary: 'Application B2B afin de permettre au client de consulter ses divers documents.',
+    tags: ['Mobile', 'Ionic Framework', 'B2B', 'API', 'Android', 'IOS'],
     details:
-      'Nebula Engine scanne des dépôts Git à grande échelle et extrait des dépendances, licences et métadonnées. Stack: Laravel + PostgreSQL, Rust worker pour la partie parsing AST, Docker multi-services, CI/CD.',
-  },
-  {
-    id: 'kiroshi',
-    title: 'Kiroshi',
-    summary: 'Agrégateur de marketplaces seconde main (recherche & alertes).',
-    tags: ['web', 'saas', 'scraping'],
-    details:
-      'Comparateur / agrégateur de prix (Vinted, Leboncoin, eBay…). Moteur d’alertes, scoring, dashboards. APIs sécurisées, files d’attente, stockage durable.',
-  },
-  {
-    id: 'lumen',
-    title: 'Lumen (assistant local)',
-    summary: 'Assistant IA local (Ollama + n8n) connecté aux notes.',
-    tags: ['ia', 'self-hosted', 'automation'],
-    details:
-      'Assistant vocal/texte auto-hébergé avec modèles locaux via Ollama, orchestrations n8n, intégration notes Markdown, wake word, TTS fr de qualité.',
+      'Application mobile créée pour les 25 ans de Kyxar, permettant aux clients de gérer leurs services, consulter leurs factures et suivre leurs notifications en toute simplicité. Un outil central pour accéder rapidement aux informations techniques : domaines, certificats, emails, VM, etc.',
   },
 ])
 
 // Timeline : modifie / ajoute facilement ici
 const timeline = ref([
   {
-    date: '2025 — présent',
-    title: 'Freelance Backend / DevOps',
-    description:
-      'Conception d’APIs, intégrations tierces, observabilité, sécurité, déploiements Docker/K8s.',
+  date: '2025 — Aujourd’hui',
+  title: 'Entrepreneur — Développement de solutions SaaS',
+  description:
+    "Développement de plateformes et outils SaaS innovants en autonomie, centrés sur la qualité, la sécurité et l’expérience utilisateur, avec l'objectif de créer des produits durables et performants à forte valeur ajoutée.",
   },
   {
-    date: '2023 — 2025',
-    title: 'Développeur Backend',
-    description:
-      'SaaS B2B, forte volumétrie, optimisation SQL, files d’attente, résilience & monitoring.',
+  date: '2024 — 2025',
+  title: 'Développeur Freelance',
+  description:
+    "Plus d’un an d’expérience en freelance sur divers projets clients, axés sur la conception de solutions web fiables et performantes.",
   },
   {
-    date: '2021 — 2023',
-    title: 'Développeur Web',
+  date: '2022 — 2024',
+  title: 'Alternance Développeur Backend — Kyxar',
+  description:
+    'Deux années d’alternance axées sur le développement backend en PHP Vanilla, sur divers projets clients et internes.',
+  },
+  {
+    date: '2022',
+    title: 'Conseiller clientèle',
     description:
-      'Applications web, automatisations, CI/CD, bonnes pratiques d’architecture.',
+      'Conseiller clientèle pour une mission de 6 mois en CDD',
+  },
+  {
+    date: '2018 — 2022',
+    title: 'Interim',
+    description:
+      'Expériences multiples alliant logistique (Freegun, Alain Milliat, Amazon) et vente directe (La Sandwicherie, TotalEnergies).',
   },
 ])
 
@@ -234,7 +230,7 @@ const goTo = (id) => {
             <div class="timeline__content">
               <div class="timeline__date">{{ item.date }}</div>
               <div class="timeline__title">{{ item.title }}</div>
-              <div class="timeline__desc">{{ item.description }}</div>
+              <div class="timeline__desc" style="white-space: pre-line;">{{ item.description }}</div>
             </div>
           </li>
         </ol>
@@ -248,8 +244,8 @@ const goTo = (id) => {
         <div class="footer__actions">
           <a class="btn btn--soft" href="mailto:contact@thibaud.tech">Email</a>
           <a class="btn btn--soft" href="/cv.pdf" download>CV</a>
-          <a class="btn btn--soft" href="https://github.com/thibaud" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn btn--soft" href="https://www.linkedin.com/in/thibaud" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn--soft" href="https://github.com/thibaudcocostegue" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn--soft" href="https://www.linkedin.com/in/thibaud-maciuk/" target="_blank" rel="noopener">LinkedIn</a>
         </div>
       </div>
     </footer>
@@ -518,6 +514,7 @@ body{
   padding:18px 0;
   border-top:1px solid rgba(255,255,255,.08);
   background: var(--surface2);
+  border-radius: 15px 15px 0px 0px;
 }
 .footer__inner{
   display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap: wrap;
