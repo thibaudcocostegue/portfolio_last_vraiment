@@ -1,5 +1,7 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
+import TrustedBy from '@/components/TrustedBy.vue'
+
 
 /**
  * --------------------------
@@ -152,6 +154,9 @@ const goTo = (id) => {
         </div>
       </div>
     </section>
+
+    <!--TrustedBy Section-->
+    <TrustedBy />
 
     <!-- Projets -->
     <section id="projects" class="section">
